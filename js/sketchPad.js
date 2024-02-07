@@ -37,7 +37,7 @@ class SketchPad{
             console.log(this.path.length);
             }         
         }
-        this.canvas.onmouse=up=()=>{
+        this.canvas.onmouseup=()=>{
             this.isDrawing=false;            
     }
 }
