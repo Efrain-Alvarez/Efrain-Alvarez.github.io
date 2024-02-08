@@ -18,27 +18,45 @@ class SketchPad{
     }
     #addEventListeners(){
         this.canvas.onmousedown=(evt)=>{
-            const rect=this.canvas.getBoundingClientRect();
-            const mouse=[
-                Math.round(evt.clientX-rect.left),
-                Math.round(evt.clientY-rect.top),
-                ];
-        this.path=[mouse];
-        this.isDrawing=true;
+            const mouse=this.#getMouse(evt);
+            this.path=[mouse];
+            this.isDrawing=true;
         };
         this.canvas.onmousemove=(evt)=>{
             if(this.isDrawing){
-            const rect=this.canvas.getBoundClientRect();
-            const mouse=[
-                Math.round(evt.clientX-rect.left),
-                Math.round(evt.clientY-rect.top),
-            ];
-            this.path.push(mouse);
-            console.log(this.path.length);
+                const mouse=this.#getMouse(evt);
+                this.path.push(mouse);
+                this.#reDraw();
             }         
         };
         this.canvas.onmouseup=()=>{
             this.isDrawing=false;            
         };
     }
+    #reDraw(){
+        this.ctx.clearRect(0,0,
+            this.canvas.width,this.canvas.height);
+        this.#reDraw.path(this.ctx,this.path);
+    }
+
+
+
+
+
+    #getMouse=(evt)=>{
+        const rect=this.canvas.getBoundingClientRect();
+        return [
+            Math.round(evt.clientX-rect.left),
+            Math.round(evt.clientY-rect.top),
+        ];
+    }
+
+
+
+
+
+
+
+
 }
+
