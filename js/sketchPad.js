@@ -16,7 +16,7 @@ class SketchPad{
 
         this.#addEventListeners();
     }
-    #addEventListeners{
+    #addEventListeners(){
         this.canvas.onmousedown=(evt)=>{
             const rect=this.canvas.getBoundingClientRect();
             const mouse=[
@@ -25,7 +25,7 @@ class SketchPad{
                 ];
         this.path=[mouse];
         this.isDrawing=true;
-        }
+        };
         this.canvas.onmousemove=(evt)=>{
             if(this.isDrawing){
             const rect=this.canvas.getBoundClientRect();
@@ -36,8 +36,9 @@ class SketchPad{
             this.path.push(mouse);
             console.log(this.path.length);
             }         
-        }
+        };
         this.canvas.onmouseup=()=>{
             this.isDrawing=false;            
+        };
     }
 }
