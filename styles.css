@@ -1,0 +1,13 @@
+.background{
+    background-color: beige;
+    background-image: url(./images/digitization-5140071_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    color: aliceblue;
+    
+}
