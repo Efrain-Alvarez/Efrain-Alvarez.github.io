@@ -50,9 +50,14 @@
 }
 
 .pdf-container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: auto;
-    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    border: none;
+    width: 40%;
+    height: 500px;
 }
