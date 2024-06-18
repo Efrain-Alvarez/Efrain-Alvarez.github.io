@@ -43,3 +43,16 @@
 .navbar li {
     float: left;
 }
+
+.intro {
+    color: whitesmoke;
+    text-align: center;    
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
