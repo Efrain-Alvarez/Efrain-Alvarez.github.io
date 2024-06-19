@@ -1,12 +1,14 @@
-const cert = document.getElementById('pdf-cert')
+window.addEventListener('DOMContentLoaded', () => {
+    function resizeIframes() {
+        const iframes = document.querySelectorAll('.pdf-cert');
+        
+        iframes.forEach(iframe => {
+            // Set the height of each iframe to 60% of the window height
+            iframe.style.height = `${window.innerHeight * 0.6}px`;
+        });
+    }
 
-function resizeIframe () {
-    const containerWidth = document.querySelector('.pdf-container').offsetWidth;
-    const containerHeight = document.querySelector('pdf-container').offsetHeight;
+    resizeIframes();
 
-    pdfFrame.style.width = `${containerWidth}px`;
-    pdfFrame.style.height = `${containerHeight}px`;
-}
-
-window.addEventListener('resize', resizeIframe);
-window.addEventListener('DOMContentLoaded', resizeIframe);
+    window.addEventListener('resize', resizeIframes);
+});
