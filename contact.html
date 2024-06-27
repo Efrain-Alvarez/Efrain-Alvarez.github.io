@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact Information</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="background">
-    <h1 class="header">Contact Information</h1>
+    <h1 class="header">Contact Me</h1>
     <nav class="navbar">
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -14,11 +17,31 @@
             <li><a href="./projects.html">Projects</a></li>
         </ul>
     </nav>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <a class="social-icon" href="https://github.com/Efrain-Alvarez" target="_blank">
-        <ion-icon name="logo-github" size="large"></ion-icon>
-    </a>
     
+    <section class="contact-section">
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        
+        <div class="social-icons">
+            <a class="social-icon large-icon" href="https://github.com/Efrain-Alvarez" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>            
+            <!-- Add more social icons as needed -->
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Efrain Alvarez. All rights reserved.</p>
+    </footer>
 </body>
 </html>
