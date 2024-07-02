@@ -55,14 +55,30 @@
     float: left;
 }
 
-/* Intro Section */
-.intro {
-    color: whitesmoke;
+/* Introduction Section */
+.intro-section {
+    padding: 20px;
+    color: white;
     text-align: center;
-    font-size: larger;
-    margin-top: 20px;
 }
 
+.intro-section h2 {
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-align: left;
+    max-width: 800px; /* Optional: to limit the width */
+}
 /* PDF Container Styles */
 .pdf-container {
     margin: 0 auto;
