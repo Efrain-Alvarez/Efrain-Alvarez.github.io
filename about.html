@@ -7,35 +7,36 @@
     <title>About Me</title>
 </head>
 <body class="background">
-    <h1 class="header">About Me</h1>
-    <nav class="navbar">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="intro-section">
-        <h2>Introduction</h2>
-        <div id="intro-text" class="intro-text">
-            Hello! I am Efrain and this is my website.
-            Now that you are here I will tell you a little bit about myself.
-            I like to build things for no other reason than just to see if it works.
-            I like to be outdoors and enjoy camping; I am going to try and do a solo backpacking trip soon.
-            Professionally, I have more IT experience with very little developer experience, but academically I have 
-            a degree in computer science. You can find the degree below as well as other certificates.
+    <header>
+        <h1 class="header">About Me</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="intro-section">
+            <h2>Introduction</h2>
+            <textarea id="intro-text" class="intro-text" rows="10" cols="50">Hello! I am Efrain and this is my website.
+                Now that you are here I will tell you a little bit about myself, 
+                I like to build things for no other reason than just to see if it works. 
+                I like to be outdoors and enjoy camping, I am going to try and do a solo backpacking trip soon.
+                Professionally I have more IT experience with very little developer experience but academically I have 
+                a degree in computer science. You can find the degree below as well as a couple other certs.
+            </textarea>
+        </section>
+        <div class="pdf-container">
+            <iframe src="./images/RMF_Certificate.pdf" id="pdf-cert"></iframe>
+            <iframe src="./images/Degree.pdf" id="pdf-cert"></iframe>
+            <iframe src="./images/CompTIA Security+ ce certificate.pdf" id="pdf-cert"></iframe>
         </div>
-    </section>
-    <div class="pdf-container">
-    <iframe src="./images/RMF_Certificate.pdf" id="pdf-cert"></iframe>
-    <iframe src="./images/Degree.pdf" id="pdf-cert"></iframe>
-    <iframe src="./images/CompTIA Security+ ce certificate.pdf" id="pdf-cert"></iframe>
-    </div>
-
+    </main>
     <footer class="footer">
         <p>&copy; 2024 Efrain Alvarez. All rights reserved.</p>
     </footer>
-    
     <script src="scripts.js"></script>
 </body>
 </html>
